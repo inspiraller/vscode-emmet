@@ -1,8 +1,10 @@
 const path = require('path');
 const HtmlWebpackPlugin = require('html-webpack-plugin')
 
+// const dev = process.env.NODE_ENV;
+
 module.exports = {
-  entry: path.join(__dirname, './src/index.tsx'),
+  entry: path.join(__dirname, 'src/index.tsx'),
   module: {
     rules: [
       {
@@ -19,7 +21,7 @@ module.exports = {
     filename: 'bundle.js',
     path: path.resolve(__dirname, 'dist'),
   },
-  plugins: [new HtmlWebpackPlugin({ template: './src/index.html' })],
+  plugins: [new HtmlWebpackPlugin({ template: './src/index.html' })], // without this - just a directory tree of html files displays
 
   devServer: {
     port: 3000,

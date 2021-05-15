@@ -6,7 +6,7 @@
     "lib": ["es2018", "es2015", "es5", "es6", "dom", "esnext.asynciterable"],
     "esModuleInterop": true,
     "allowSyntheticDefaultImports": true,
-    "outDir": "./dist/out-tsc",
+    "outDir": "./dist",
     "sourceMap": true,
     "jsx": "react",
     "pretty": true,
